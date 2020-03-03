@@ -1,0 +1,62 @@
+#!/bin/bash
+ 
+# Declare an array of string with type
+declare -a StringArray=("Linux Mint" "Fedora" "Red Hat Linux" "Ubuntu" "Debian" )
+ 
+# Iterate the string array using for loop
+for val in ${StringArray[@]}; do
+   echo $val
+done
+
+
+
+
+#!/bin/bash
+ 
+# Declare a string array with type
+declare -a StringArray=("Windows XP" "Windows 10" "Windows ME" "Windows 8.1"
+"Windows Server 2016" )
+ 
+# Read the array values with space
+for val in "${StringArray[@]}"; do
+  echo $val
+done
+
+
+
+
+#!/bin/bash
+ 
+#Declare a string array
+LanguageArray=("PHP"  "Java"  "C#"  "C++"  "VB.Net"  "Python"  "Perl")
+ 
+# Print array values in  lines
+echo "Print every element in new line"
+for val1 in ${LanguageArray[*]}; do
+     echo $val1
+done
+ 
+
+
+
+
+
+#!/bin/bash
+DataList=" HTML5, CCS3, BootStrap, JQuery "
+Field_Separator=$IFS
+ 
+# set comma as internal field separator for the string list
+IFS=,
+for val in $DataList;
+do
+echo $val
+done
+ 
+IFS=$Field_Separator
+
+
+
+
+
+
+
